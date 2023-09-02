@@ -1,0 +1,158 @@
+/*Start Variable*/
+:root {
+    --main-color: #19be6f;
+    --second-color: #006d77;
+    --global-color: #062a3f;
+    --e-global-color-secondary: #ebf8f2;
+    --e-global-color-accent: #ff9505;
+    --e-global-color-099a789: #ffffff;
+    --e-global-color-ee5a311: #f9f9f9;
+    --e-global-color-4f441f9: #82929b;
+    --e-global-color-19ec2d7: #19be6f26;
+    --e-global-color-c700d15: #ffffff00;
+    --e-global-color-b63a61b: #82929b38;
+    --e-global-color-fb50662: #062a3f1a;
+    --transition: 0.3s;
+}
+/*Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Heebo", sans-serif;
+    /* background-color: #f9f9f9; */
+    /* background-image: url(../image/dotsleft.png); */
+    background-image: url(../image/dotsright.png);
+    height: 186px;
+    background-repeat: no-repeat;
+}
+html {
+    scroll-behavior: smooth;
+}
+.login {
+    height: 100vh;
+}
+.login .content {
+    max-width: 450px;
+    padding: 24px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    outline: 3px solid var(--global-color);
+    box-shadow: 0 20px 15px rgb(0, 0, 0);
+}
+.login .title {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 56px;
+    margin-top: 20px;
+}
+.login .content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.login .content .form-content {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+button.submit {
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    outline: 2px solid var(--main-color);
+    color: white;
+    margin-right: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: var(--main-color);
+}
+.login .content button:hover {
+    transition: var(--transition);
+    color: white;
+}
+input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+}
+input {
+    width: 100%;
+    background-color: #e6e6e6;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+}
+input ~ i {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: color 0.4s;
+}
+input:focus ~ i {
+    color: var(--global-color);
+}
+.login .link {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+}
+.login .link a {
+    color: #333;
+}
+button i {
+    position: relative;
+    right: -15px;
+}
+button:hover i {
+    animation: moving 0.6s linear infinite;
+}
+@keyframes moving {
+    100% {
+        transform: translateX(10px);
+    }
+}
+@media (max-width: 768px) {
+    .login .content {
+        max-width: 350px;
+    }
+}
+/* .dots{
+    background-image: url(../image/dots3.png);
+    height: 186px;
+    width: 204px;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.2;
+}
+.dots-up{
+    top: 5px;
+    right: 0;
+}
+.dots-down{
+bottom:200px;
+left: 0;
+} */

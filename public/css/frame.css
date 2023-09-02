@@ -1,0 +1,70 @@
+:root {
+    --main-color: #00a000;
+    --second-color: #006600;   
+    --transition: 0.3s;
+  }
+
+/*
+*bg-color
+*/
+.bg-white {
+    background-color: white;
+}
+.bg-black {
+    background-color: black;
+}
+.bg-main {
+    background-color: var(--main-color);
+}
+.bg-second {
+    background-color: var(--second-color);
+}
+
+/*
+*color
+*/
+.c-black{
+    color: black;
+}
+.c-main{
+    color: var(--main-color);
+}
+.c-second{
+    color: var(--second-color);
+}
+/*
+*display
+*/
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.block {
+    display: block;
+}
+/*
+*position
+*/
+.p-absolute {
+    position: absolute;
+}
+.p-relative {
+    position: relative;
+}
+/*
+*font-size
+*/
+.f-15 {
+    font-size: 15px;
+}
+.f-20 {
+    font-size: 20px;
+}
+.f-25 {
+    font-size: 25px;
+}
